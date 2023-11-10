@@ -4,6 +4,7 @@ package settings
 
 type Config struct {
 	*AppConfig   `mapstructure:"app"`
+	*SnowConfig  `mapstructure:"snow"`
 	*LogConfig   `mapstructure:"log"`
 	*MYSQLConfig `mapstructure:"mysql"`
 	*RedisConfig `mapstructure:"redis"`
@@ -13,6 +14,11 @@ type AppConfig struct {
 	Name string `mapstructure:"name"`
 	Port int    `mapstructure:"port"`
 	Mode string `mapstructure:"mode"`
+}
+
+type SnowConfig struct {
+	StartTime string `mapstructure:"start_time"`
+	MachineID uint16 `mapstructure:"machine_id"`
 }
 
 type LogConfig struct {

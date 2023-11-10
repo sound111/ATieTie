@@ -4,6 +4,7 @@ import (
 	"Web/dao/mysql"
 	"Web/dao/redis"
 	"Web/logger"
+	"Web/pkg/snowflakes"
 	"Web/routes"
 	"Web/settings"
 	"context"
@@ -16,19 +17,25 @@ import (
 	"time"
 
 	"github.com/gin-gonic/gin"
-
 	"go.uber.org/zap"
 )
 
 func main() {
 	//加载配置viper
-	err := settings.Init("D:\\Go\\goCode\\Web\\settings\\conf.yaml")
+	err := settings.Init("settings/conf.yaml")
 	if err != nil {
 		fmt.Println("initsettings err:", err)
 		return
 	}
 
-	//初始化日志zap
+	//初始化snowflakes
+	err = snowflakes.Init()
+	if err != nil {
+		fmt.Println("initsnowflakes err:", err)
+		return
+	}
+
+	初始化日志zap
 	err = logger.Init()
 	if err != nil {
 		fmt.Println("initlogger err:", err)
@@ -87,4 +94,5 @@ func main() {
 	}
 
 	zap.L().Info("Server exiting")
+
 }
