@@ -1,0 +1,20 @@
+{"level":"info","ts":"2023-11-10T14:55:01.637+0800","caller":"logger/logger.go:80","msg":"/","status":200,"method":"GET","path":"/","query":"","ip":"::1","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36","errors":"","cost":0}
+{"level":"info","ts":"2023-11-10T14:55:06.996+0800","caller":"logger/logger.go:80","msg":"/favicon.ico","status":404,"method":"GET","path":"/favicon.ico","query":"","ip":"::1","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36","errors":"","cost":0}
+{"level":"info","ts":"2023-11-10T14:58:22.732+0800","caller":"Web/main.go:81","msg":"Shutdown Server ..."}
+{"level":"info","ts":"2023-11-10T14:58:22.742+0800","caller":"Web/main.go:90","msg":"Server exiting"}
+{"level":"info","ts":"2023-11-10T15:01:30.835+0800","caller":"Web/main.go:79","msg":"Shutdown Server ..."}
+{"level":"info","ts":"2023-11-10T15:01:30.845+0800","caller":"Web/main.go:88","msg":"Server exiting"}
+{"level":"info","ts":"2023-11-10T15:06:53.476+0800","caller":"Web/main.go:80","msg":"Shutdown Server ..."}
+{"level":"info","ts":"2023-11-10T15:06:53.487+0800","caller":"Web/main.go:89","msg":"Server exiting"}
+{"level":"info","ts":"2023-11-10T15:08:56.754+0800","caller":"Web/main.go:80","msg":"Shutdown Server ..."}
+{"level":"info","ts":"2023-11-10T15:08:56.764+0800","caller":"Web/main.go:89","msg":"Server exiting"}
+{"level":"info","ts":"2023-11-10T15:09:13.734+0800","caller":"Web/main.go:80","msg":"Shutdown Server ..."}
+{"level":"info","ts":"2023-11-10T15:09:13.743+0800","caller":"Web/main.go:89","msg":"Server exiting"}
+{"level":"info","ts":"2023-11-10T15:09:30.188+0800","caller":"Web/main.go:80","msg":"Shutdown Server ..."}
+{"level":"info","ts":"2023-11-10T15:09:30.200+0800","caller":"Web/main.go:89","msg":"Server exiting"}
+{"level":"info","ts":"2023-11-10T15:23:33.962+0800","caller":"Web/main.go:80","msg":"Shutdown Server ..."}
+{"level":"info","ts":"2023-11-10T15:23:33.972+0800","caller":"Web/main.go:89","msg":"Server exiting"}
+{"level":"info","ts":"2023-11-10T15:23:46.836+0800","caller":"logger/logger.go:80","msg":"/","status":200,"method":"GET","path":"/","query":"","ip":"::1","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36","errors":"","cost":0}
+{"level":"info","ts":"2023-11-10T15:23:59.413+0800","caller":"logger/logger.go:80","msg":"/","status":200,"method":"GET","path":"/","query":"","ip":"::1","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36","errors":"","cost":0}
+{"level":"info","ts":"2023-11-10T15:24:02.284+0800","caller":"Web/main.go:80","msg":"Shutdown Server ..."}
+{"level":"info","ts":"2023-11-10T15:24:02.284+0800","caller":"Web/main.go:89","msg":"Server exiting"}

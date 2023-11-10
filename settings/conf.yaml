@@ -1,0 +1,25 @@
+app:
+  name: "web1111"
+  mode: "debug"
+  port: 8080
+log:
+  level: "debug"
+  filename: "web.log"
+  max_size: 200 #单位m
+  max_age: 30 #天
+  max_backups: 7 #最多保存的日志文件数量
+  compress: false #是否压缩
+mysql:
+  host: "127.0.0.1"
+  port: 3306
+  user: "root"
+  pwd: "edn9nd2t"
+  db: "myBlog"
+  #max_open_conns:
+  #max_idle_conns
+redis:
+  host: "127.0.0.1"
+  port: 6379
+  pwd: ""
+  db: 0
+  #pool_size:
