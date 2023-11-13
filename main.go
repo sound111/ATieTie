@@ -1,12 +1,11 @@
 package main
 
 import (
-	"Web/dao/mysql"
-	"Web/dao/redis"
-	"Web/logger"
-	"Web/pkg/snowflakes"
-	"Web/routes"
-	"Web/settings"
+	"TieTie/dao/mysql"
+	"TieTie/logger"
+	"TieTie/pkg/snowflakes"
+	"TieTie/routes"
+	"TieTie/settings"
 	"context"
 	"fmt"
 	"log"
@@ -35,7 +34,7 @@ func main() {
 		return
 	}
 
-	初始化日志zap
+	//初始化日志zap
 	err = logger.Init()
 	if err != nil {
 		fmt.Println("initlogger err:", err)
@@ -52,12 +51,12 @@ func main() {
 	defer mysql.Close()
 
 	//连接redis go_redis
-	err = redis.Init(settings.Conf.RedisConfig)
-	if err != nil {
-		fmt.Println("initredis err:", err)
-		return
-	}
-	defer redis.Close()
+	//err = redis.Init(settings.Conf.RedisConfig)
+	//if err != nil {
+	//	fmt.Println("initredis err:", err)
+	//	return
+	//}
+	//defer redis.Close()
 
 	//路由 gin
 	gin.SetMode(settings.Conf.AppConfig.Mode)

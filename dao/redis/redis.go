@@ -1,7 +1,7 @@
 package redis
 
 import (
-	"Web/settings"
+	"TieTie/settings"
 	"strconv"
 
 	"github.com/go-redis/redis"

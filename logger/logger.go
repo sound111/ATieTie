@@ -1,7 +1,7 @@
 package logger
 
 import (
-	"Web/settings"
+	"TieTie/settings"
 	"net"
 	"net/http"
 	"net/http/httputil"
@@ -28,7 +28,16 @@ func Init() (err error) {
 	}
 	encoder := getEncoder()
 
-	core := zapcore.NewCore(encoder, writeSyncer, zapcore.DebugLevel)
+	var core zapcore.Core
+	if settings.Conf.AppConfig.Mode == "debug" {
+		consoleEncoding := zapcore.NewConsoleEncoder(zap.NewDevelopmentEncoderConfig())
+		core = zapcore.NewTee(
+			zapcore.NewCore(consoleEncoding, zapcore.Lock(os.Stdout), zapcore.DebugLevel),
+			zapcore.NewCore(encoder, writeSyncer, zapcore.DebugLevel),
+		)
+	} else {
+		core = zapcore.NewCore(encoder, writeSyncer, zapcore.DebugLevel)
+	}
 
 	lg := zap.New(core, zap.AddCaller())
 	// 替换zap库中全局的logger zap.L()
@@ -84,7 +93,7 @@ func GinLogger() gin.HandlerFunc {
 			zap.String("query", query),
 			zap.String("ip", c.ClientIP()),
 			zap.String("user-agent", c.Request.UserAgent()),
-			zap.String("errors", c.Errors.ByType(gin.ErrorTypePrivate).String()),
+			zap.String("myError", c.Errors.ByType(gin.ErrorTypePrivate).String()),
 			zap.Duration("cost", cost),
 		)
 	}

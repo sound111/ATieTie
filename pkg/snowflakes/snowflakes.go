@@ -1,7 +1,7 @@
 package snowflakes
 
 import (
-	"Web/settings"
+	"TieTie/settings"
 	"time"
 
 	"github.com/sony/sonyflake"
