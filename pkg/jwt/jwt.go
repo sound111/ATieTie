@@ -7,9 +7,9 @@ import (
 	"github.com/golang-jwt/jwt/v5"
 )
 
-const TokenExpireDuration = time.Hour * 2
+const TokenExpireDuration = time.Hour * 240
 
-var Salt = []byte("嘿哈")
+var Salt = []byte("爱自己是终身浪漫的开始")
 
 type MyClaims struct {
 	UserId uint64

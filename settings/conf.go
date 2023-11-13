@@ -29,6 +29,7 @@ type LogConfig struct {
 	MaxBackups int    `mapstructure:"max_backups"`
 	Compress   bool   `mapstructure:"compress"`
 }
+
 type MYSQLConfig struct {
 	Host         string `mapstructure:"host"`
 	Port         string `mapstructure:"port"`

@@ -142,3 +142,108 @@
 {"level":"info","ts":"2023-11-13T11:08:38.952+0800","caller":"logger/logger.go:89","msg":"/","status":200,"method":"GET","path":"/","query":"","ip":"::1","user-agent":"PostmanRuntime/7.35.0","myError":"","cost":0.0005123}
 {"level":"info","ts":"2023-11-13T11:10:34.125+0800","caller":"Tietie/main.go:86","msg":"Shutdown Server ..."}
 {"level":"info","ts":"2023-11-13T11:10:34.125+0800","caller":"Tietie/main.go:95","msg":"Server exiting"}
+{"level":"info","ts":"2023-11-13T15:21:42.751+0800","caller":"logger/logger.go:89","msg":"/api/v1/community","status":200,"method":"GET","path":"/api/v1/community","query":"","ip":"::1","user-agent":"PostmanRuntime/7.35.0","myError":"","cost":0.0000617}
+{"level":"info","ts":"2023-11-13T15:22:08.817+0800","caller":"logger/logger.go:89","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"::1","user-agent":"PostmanRuntime/7.35.0","myError":"","cost":0.0020009}
+{"level":"info","ts":"2023-11-13T15:22:23.293+0800","caller":"logger/logger.go:89","msg":"/api/v1/community","status":200,"method":"GET","path":"/api/v1/community","query":"","ip":"::1","user-agent":"PostmanRuntime/7.35.0","myError":"","cost":0.0019182}
+{"level":"info","ts":"2023-11-13T15:35:41.620+0800","caller":"Tietie/main.go:86","msg":"Shutdown Server ..."}
+{"level":"info","ts":"2023-11-13T15:35:41.621+0800","caller":"Tietie/main.go:95","msg":"Server exiting"}
+{"level":"info","ts":"2023-11-13T16:04:39.869+0800","caller":"logger/logger.go:89","msg":"/api/v1/community/1","status":200,"method":"GET","path":"/api/v1/community/1","query":"","ip":"::1","user-agent":"PostmanRuntime/7.35.0","myError":"","cost":0.0008241}
+{"level":"info","ts":"2023-11-13T16:04:47.636+0800","caller":"logger/logger.go:89","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"::1","user-agent":"PostmanRuntime/7.35.0","myError":"","cost":0.0020421}
+{"level":"info","ts":"2023-11-13T16:05:00.106+0800","caller":"logger/logger.go:89","msg":"/api/v1/community/1","status":200,"method":"GET","path":"/api/v1/community/1","query":"","ip":"::1","user-agent":"PostmanRuntime/7.35.0","myError":"","cost":0.0021784}
+{"level":"info","ts":"2023-11-13T16:05:02.864+0800","caller":"logger/logger.go:89","msg":"/api/v1/community/1","status":200,"method":"GET","path":"/api/v1/community/1","query":"","ip":"::1","user-agent":"PostmanRuntime/7.35.0","myError":"","cost":0.0022392}
+{"level":"info","ts":"2023-11-13T16:07:32.383+0800","caller":"Tietie/main.go:86","msg":"Shutdown Server ..."}
+{"level":"info","ts":"2023-11-13T16:07:32.383+0800","caller":"Tietie/main.go:95","msg":"Server exiting"}
+{"level":"info","ts":"2023-11-13T16:07:43.253+0800","caller":"logger/logger.go:89","msg":"/api/v1/community/1","status":200,"method":"GET","path":"/api/v1/community/1","query":"","ip":"::1","user-agent":"PostmanRuntime/7.35.0","myError":"","cost":0.0023636}
+{"level":"info","ts":"2023-11-13T16:08:11.728+0800","caller":"Tietie/main.go:86","msg":"Shutdown Server ..."}
+{"level":"info","ts":"2023-11-13T16:08:11.728+0800","caller":"Tietie/main.go:95","msg":"Server exiting"}
+{"level":"error","ts":"2023-11-13T16:08:19.281+0800","caller":"controller/community.go:34","msg":"Error 1054 (42S22): Unknown column 'introduce' in 'field list'","error":"Error 1054 (42S22): Unknown column 'introduce' in 'field list'"}
+{"level":"info","ts":"2023-11-13T16:08:19.290+0800","caller":"logger/logger.go:89","msg":"/api/v1/community/1","status":200,"method":"GET","path":"/api/v1/community/1","query":"","ip":"::1","user-agent":"PostmanRuntime/7.35.0","myError":"","cost":0.0107763}
+{"level":"info","ts":"2023-11-13T16:09:02.292+0800","caller":"Tietie/main.go:86","msg":"Shutdown Server ..."}
+{"level":"info","ts":"2023-11-13T16:09:02.293+0800","caller":"Tietie/main.go:95","msg":"Server exiting"}
+{"level":"error","ts":"2023-11-13T16:09:11.577+0800","caller":"controller/community.go:37","msg":"Error 1054 (42S22): Unknown column 'introduce' in 'field list'","error":"Error 1054 (42S22): Unknown column 'introduce' in 'field list'"}
+{"level":"info","ts":"2023-11-13T16:09:11.586+0800","caller":"logger/logger.go:89","msg":"/api/v1/community/1","status":200,"method":"GET","path":"/api/v1/community/1","query":"","ip":"::1","user-agent":"PostmanRuntime/7.35.0","myError":"","cost":0.0109555}
+{"level":"info","ts":"2023-11-13T16:09:47.025+0800","caller":"logger/logger.go:89","msg":"/api/v1/community/id:1","status":200,"method":"GET","path":"/api/v1/community/id:1","query":"","ip":"::1","user-agent":"PostmanRuntime/7.35.0","myError":"","cost":0}
+{"level":"error","ts":"2023-11-13T16:09:52.621+0800","caller":"controller/community.go:37","msg":"Error 1054 (42S22): Unknown column 'introduce' in 'field list'","error":"Error 1054 (42S22): Unknown column 'introduce' in 'field list'"}
+{"level":"info","ts":"2023-11-13T16:09:52.621+0800","caller":"logger/logger.go:89","msg":"/api/v1/community/1","status":200,"method":"GET","path":"/api/v1/community/1","query":"","ip":"::1","user-agent":"PostmanRuntime/7.35.0","myError":"","cost":0.0023974}
+{"level":"info","ts":"2023-11-13T16:10:37.970+0800","caller":"Tietie/main.go:86","msg":"Shutdown Server ..."}
+{"level":"info","ts":"2023-11-13T16:10:37.971+0800","caller":"Tietie/main.go:95","msg":"Server exiting"}
+{"level":"error","ts":"2023-11-13T16:10:47.167+0800","caller":"controller/community.go:37","msg":"expected slice but got ptr","error":"expected slice but got ptr"}
+{"level":"info","ts":"2023-11-13T16:10:47.176+0800","caller":"logger/logger.go:89","msg":"/api/v1/community/1","status":200,"method":"GET","path":"/api/v1/community/1","query":"","ip":"::1","user-agent":"PostmanRuntime/7.35.0","myError":"","cost":0.0109578}
+{"level":"error","ts":"2023-11-13T16:10:50.955+0800","caller":"controller/community.go:37","msg":"expected slice but got ptr","error":"expected slice but got ptr"}
+{"level":"info","ts":"2023-11-13T16:10:50.955+0800","caller":"logger/logger.go:89","msg":"/api/v1/community/1","status":200,"method":"GET","path":"/api/v1/community/1","query":"","ip":"::1","user-agent":"PostmanRuntime/7.35.0","myError":"","cost":0.0017955}
+{"level":"info","ts":"2023-11-13T16:14:42.564+0800","caller":"Tietie/main.go:86","msg":"Shutdown Server ..."}
+{"level":"info","ts":"2023-11-13T16:14:42.565+0800","caller":"Tietie/main.go:95","msg":"Server exiting"}
+{"level":"error","ts":"2023-11-13T16:14:51.577+0800","caller":"controller/community.go:37","msg":"expected slice but got ptr","error":"expected slice but got ptr"}
+{"level":"info","ts":"2023-11-13T16:14:51.587+0800","caller":"logger/logger.go:89","msg":"/api/v1/community/1","status":200,"method":"GET","path":"/api/v1/community/1","query":"","ip":"::1","user-agent":"PostmanRuntime/7.35.0","myError":"","cost":0.0110488}
+{"level":"error","ts":"2023-11-13T16:14:54.096+0800","caller":"controller/community.go:37","msg":"expected slice but got ptr","error":"expected slice but got ptr"}
+{"level":"info","ts":"2023-11-13T16:14:54.097+0800","caller":"logger/logger.go:89","msg":"/api/v1/community/1","status":200,"method":"GET","path":"/api/v1/community/1","query":"","ip":"::1","user-agent":"PostmanRuntime/7.35.0","myError":"","cost":0.0025491}
+{"level":"info","ts":"2023-11-13T16:16:20.134+0800","caller":"Tietie/main.go:86","msg":"Shutdown Server ..."}
+{"level":"info","ts":"2023-11-13T16:16:20.135+0800","caller":"Tietie/main.go:95","msg":"Server exiting"}
+{"level":"error","ts":"2023-11-13T16:16:37.083+0800","caller":"controller/community.go:39","msg":"expected slice but got ptr","error":"expected slice but got ptr"}
+{"level":"info","ts":"2023-11-13T16:16:37.093+0800","caller":"logger/logger.go:89","msg":"/api/v1/community/1","status":200,"method":"GET","path":"/api/v1/community/1","query":"","ip":"::1","user-agent":"PostmanRuntime/7.35.0","myError":"","cost":0.0116588}
+{"level":"error","ts":"2023-11-13T16:16:38.826+0800","caller":"controller/community.go:39","msg":"expected slice but got ptr","error":"expected slice but got ptr"}
+{"level":"info","ts":"2023-11-13T16:16:38.826+0800","caller":"logger/logger.go:89","msg":"/api/v1/community/1","status":200,"method":"GET","path":"/api/v1/community/1","query":"","ip":"::1","user-agent":"PostmanRuntime/7.35.0","myError":"","cost":0.0015594}
+{"level":"error","ts":"2023-11-13T16:16:41.113+0800","caller":"controller/community.go:39","msg":"expected slice but got ptr","error":"expected slice but got ptr"}
+{"level":"info","ts":"2023-11-13T16:16:41.113+0800","caller":"logger/logger.go:89","msg":"/api/v1/community/1","status":200,"method":"GET","path":"/api/v1/community/1","query":"","ip":"::1","user-agent":"PostmanRuntime/7.35.0","myError":"","cost":0.0029366}
+{"level":"info","ts":"2023-11-13T16:18:15.177+0800","caller":"Tietie/main.go:86","msg":"Shutdown Server ..."}
+{"level":"info","ts":"2023-11-13T16:18:15.178+0800","caller":"Tietie/main.go:95","msg":"Server exiting"}
+{"level":"error","ts":"2023-11-13T16:18:23.943+0800","caller":"controller/community.go:39","msg":"scannable dest type ptr with >1 columns (4) in result","error":"scannable dest type ptr with >1 columns (4) in result"}
+{"level":"info","ts":"2023-11-13T16:18:23.952+0800","caller":"logger/logger.go:89","msg":"/api/v1/community/1","status":200,"method":"GET","path":"/api/v1/community/1","query":"","ip":"::1","user-agent":"PostmanRuntime/7.35.0","myError":"","cost":0.0109568}
+{"level":"error","ts":"2023-11-13T16:18:25.235+0800","caller":"controller/community.go:39","msg":"scannable dest type ptr with >1 columns (4) in result","error":"scannable dest type ptr with >1 columns (4) in result"}
+{"level":"info","ts":"2023-11-13T16:18:25.235+0800","caller":"logger/logger.go:89","msg":"/api/v1/community/1","status":200,"method":"GET","path":"/api/v1/community/1","query":"","ip":"::1","user-agent":"PostmanRuntime/7.35.0","myError":"","cost":0.0019647}
+{"level":"error","ts":"2023-11-13T16:18:26.379+0800","caller":"controller/community.go:39","msg":"scannable dest type ptr with >1 columns (4) in result","error":"scannable dest type ptr with >1 columns (4) in result"}
+{"level":"info","ts":"2023-11-13T16:18:26.379+0800","caller":"logger/logger.go:89","msg":"/api/v1/community/1","status":200,"method":"GET","path":"/api/v1/community/1","query":"","ip":"::1","user-agent":"PostmanRuntime/7.35.0","myError":"","cost":0.0022618}
+{"level":"error","ts":"2023-11-13T16:18:27.316+0800","caller":"controller/community.go:39","msg":"scannable dest type ptr with >1 columns (4) in result","error":"scannable dest type ptr with >1 columns (4) in result"}
+{"level":"info","ts":"2023-11-13T16:18:27.316+0800","caller":"logger/logger.go:89","msg":"/api/v1/community/1","status":200,"method":"GET","path":"/api/v1/community/1","query":"","ip":"::1","user-agent":"PostmanRuntime/7.35.0","myError":"","cost":0.0024418}
+{"level":"info","ts":"2023-11-13T16:19:25.447+0800","caller":"Tietie/main.go:86","msg":"Shutdown Server ..."}
+{"level":"info","ts":"2023-11-13T16:19:25.447+0800","caller":"Tietie/main.go:95","msg":"Server exiting"}
+{"level":"error","ts":"2023-11-13T16:19:34.587+0800","caller":"controller/community.go:39","msg":"nil pointer passed to StructScan destination","error":"nil pointer passed to StructScan destination"}
+{"level":"info","ts":"2023-11-13T16:19:34.596+0800","caller":"logger/logger.go:89","msg":"/api/v1/community/1","status":200,"method":"GET","path":"/api/v1/community/1","query":"","ip":"::1","user-agent":"PostmanRuntime/7.35.0","myError":"","cost":0.010492}
+{"level":"error","ts":"2023-11-13T16:19:35.447+0800","caller":"controller/community.go:39","msg":"nil pointer passed to StructScan destination","error":"nil pointer passed to StructScan destination"}
+{"level":"info","ts":"2023-11-13T16:19:35.447+0800","caller":"logger/logger.go:89","msg":"/api/v1/community/1","status":200,"method":"GET","path":"/api/v1/community/1","query":"","ip":"::1","user-agent":"PostmanRuntime/7.35.0","myError":"","cost":0.0023918}
+{"level":"error","ts":"2023-11-13T16:19:35.795+0800","caller":"controller/community.go:39","msg":"nil pointer passed to StructScan destination","error":"nil pointer passed to StructScan destination"}
+{"level":"info","ts":"2023-11-13T16:19:35.796+0800","caller":"logger/logger.go:89","msg":"/api/v1/community/1","status":200,"method":"GET","path":"/api/v1/community/1","query":"","ip":"::1","user-agent":"PostmanRuntime/7.35.0","myError":"","cost":0.0020547}
+{"level":"info","ts":"2023-11-13T16:20:37.082+0800","caller":"Tietie/main.go:86","msg":"Shutdown Server ..."}
+{"level":"info","ts":"2023-11-13T16:20:37.083+0800","caller":"Tietie/main.go:95","msg":"Server exiting"}
+{"level":"error","ts":"2023-11-13T16:20:44.665+0800","caller":"controller/community.go:39","msg":"missing destination name introduction in *models.Community","error":"missing destination name introduction in *models.Community"}
+{"level":"info","ts":"2023-11-13T16:20:44.675+0800","caller":"logger/logger.go:89","msg":"/api/v1/community/1","status":200,"method":"GET","path":"/api/v1/community/1","query":"","ip":"::1","user-agent":"PostmanRuntime/7.35.0","myError":"","cost":0.011423}
+{"level":"error","ts":"2023-11-13T16:20:45.479+0800","caller":"controller/community.go:39","msg":"missing destination name introduction in *models.Community","error":"missing destination name introduction in *models.Community"}
+{"level":"info","ts":"2023-11-13T16:20:45.479+0800","caller":"logger/logger.go:89","msg":"/api/v1/community/1","status":200,"method":"GET","path":"/api/v1/community/1","query":"","ip":"::1","user-agent":"PostmanRuntime/7.35.0","myError":"","cost":0.0022854}
+{"level":"info","ts":"2023-11-13T16:24:18.503+0800","caller":"Tietie/main.go:86","msg":"Shutdown Server ..."}
+{"level":"info","ts":"2023-11-13T16:24:18.504+0800","caller":"Tietie/main.go:95","msg":"Server exiting"}
+{"level":"error","ts":"2023-11-13T16:24:28.626+0800","caller":"controller/community.go:39","msg":"missing destination name introduction in *models.Community","error":"missing destination name introduction in *models.Community"}
+{"level":"info","ts":"2023-11-13T16:24:28.635+0800","caller":"logger/logger.go:89","msg":"/api/v1/community/1","status":200,"method":"GET","path":"/api/v1/community/1","query":"","ip":"::1","user-agent":"PostmanRuntime/7.35.0","myError":"","cost":0.0111494}
+{"level":"error","ts":"2023-11-13T16:24:29.426+0800","caller":"controller/community.go:39","msg":"missing destination name introduction in *models.Community","error":"missing destination name introduction in *models.Community"}
+{"level":"info","ts":"2023-11-13T16:24:29.426+0800","caller":"logger/logger.go:89","msg":"/api/v1/community/1","status":200,"method":"GET","path":"/api/v1/community/1","query":"","ip":"::1","user-agent":"PostmanRuntime/7.35.0","myError":"","cost":0.0028041}
+{"level":"info","ts":"2023-11-13T16:25:31.465+0800","caller":"Tietie/main.go:86","msg":"Shutdown Server ..."}
+{"level":"info","ts":"2023-11-13T16:25:31.466+0800","caller":"Tietie/main.go:95","msg":"Server exiting"}
+{"level":"info","ts":"2023-11-13T16:25:40.067+0800","caller":"logger/logger.go:89","msg":"/api/v1/community/1","status":200,"method":"GET","path":"/api/v1/community/1","query":"","ip":"::1","user-agent":"PostmanRuntime/7.35.0","myError":"","cost":0.0107187}
+{"level":"error","ts":"2023-11-13T16:28:50.459+0800","caller":"controller/community.go:39","msg":"id is invalid","error":"id is invalid"}
+{"level":"info","ts":"2023-11-13T16:28:50.459+0800","caller":"logger/logger.go:89","msg":"/api/v1/community/3","status":200,"method":"GET","path":"/api/v1/community/3","query":"","ip":"::1","user-agent":"PostmanRuntime/7.35.0","myError":"","cost":0.0029304}
+{"level":"info","ts":"2023-11-13T16:30:26.728+0800","caller":"Tietie/main.go:86","msg":"Shutdown Server ..."}
+{"level":"info","ts":"2023-11-13T16:30:26.729+0800","caller":"Tietie/main.go:95","msg":"Server exiting"}
+{"level":"info","ts":"2023-11-13T16:31:33.737+0800","caller":"logger/logger.go:89","msg":"/api/v1/community/3","status":200,"method":"GET","path":"/api/v1/community/3","query":"","ip":"::1","user-agent":"PostmanRuntime/7.35.0","myError":"","cost":0}
+{"level":"info","ts":"2023-11-13T16:31:34.854+0800","caller":"logger/logger.go:89","msg":"/api/v1/community/3","status":200,"method":"GET","path":"/api/v1/community/3","query":"","ip":"::1","user-agent":"PostmanRuntime/7.35.0","myError":"","cost":0}
+{"level":"info","ts":"2023-11-13T16:31:37.146+0800","caller":"logger/logger.go:89","msg":"/api/v1/community/1","status":200,"method":"GET","path":"/api/v1/community/1","query":"","ip":"::1","user-agent":"PostmanRuntime/7.35.0","myError":"","cost":0}
+{"level":"info","ts":"2023-11-13T16:31:39.066+0800","caller":"logger/logger.go:89","msg":"/api/v1/community/1","status":200,"method":"GET","path":"/api/v1/community/1","query":"","ip":"::1","user-agent":"PostmanRuntime/7.35.0","myError":"","cost":0}
+{"level":"info","ts":"2023-11-13T16:31:39.944+0800","caller":"logger/logger.go:89","msg":"/api/v1/community/1","status":200,"method":"GET","path":"/api/v1/community/1","query":"","ip":"::1","user-agent":"PostmanRuntime/7.35.0","myError":"","cost":0}
+{"level":"info","ts":"2023-11-13T16:31:40.508+0800","caller":"logger/logger.go:89","msg":"/api/v1/community/1","status":200,"method":"GET","path":"/api/v1/community/1","query":"","ip":"::1","user-agent":"PostmanRuntime/7.35.0","myError":"","cost":0.000656}
+{"level":"info","ts":"2023-11-13T16:32:59.956+0800","caller":"logger/logger.go:89","msg":"/api/v1/community/1","status":200,"method":"GET","path":"/api/v1/community/1","query":"","ip":"::1","user-agent":"PostmanRuntime/7.35.0","myError":"","cost":0}
+{"level":"info","ts":"2023-11-13T16:33:00.552+0800","caller":"logger/logger.go:89","msg":"/api/v1/community/1","status":200,"method":"GET","path":"/api/v1/community/1","query":"","ip":"::1","user-agent":"PostmanRuntime/7.35.0","myError":"","cost":0}
+{"level":"info","ts":"2023-11-13T16:33:42.172+0800","caller":"Tietie/main.go:86","msg":"Shutdown Server ..."}
+{"level":"info","ts":"2023-11-13T16:33:42.174+0800","caller":"Tietie/main.go:95","msg":"Server exiting"}
+{"level":"info","ts":"2023-11-13T16:33:55.662+0800","caller":"logger/logger.go:89","msg":"/api/v1/community/1","status":200,"method":"GET","path":"/api/v1/community/1","query":"","ip":"::1","user-agent":"PostmanRuntime/7.35.0","myError":"","cost":0.0006149}
+{"level":"info","ts":"2023-11-13T16:33:56.425+0800","caller":"logger/logger.go:89","msg":"/api/v1/community/1","status":200,"method":"GET","path":"/api/v1/community/1","query":"","ip":"::1","user-agent":"PostmanRuntime/7.35.0","myError":"","cost":0.0008456}
+{"level":"info","ts":"2023-11-13T16:34:44.830+0800","caller":"Tietie/main.go:86","msg":"Shutdown Server ..."}
+{"level":"info","ts":"2023-11-13T16:34:44.831+0800","caller":"Tietie/main.go:95","msg":"Server exiting"}
+{"level":"info","ts":"2023-11-13T16:34:52.976+0800","caller":"logger/logger.go:89","msg":"/api/v1/community/1","status":200,"method":"GET","path":"/api/v1/community/1","query":"","ip":"::1","user-agent":"PostmanRuntime/7.35.0","myError":"","cost":0}
+{"level":"info","ts":"2023-11-13T16:35:26.956+0800","caller":"Tietie/main.go:86","msg":"Shutdown Server ..."}
+{"level":"info","ts":"2023-11-13T16:35:26.957+0800","caller":"Tietie/main.go:95","msg":"Server exiting"}
+{"level":"info","ts":"2023-11-13T16:35:34.612+0800","caller":"logger/logger.go:89","msg":"/api/v1/community/1","status":200,"method":"GET","path":"/api/v1/community/1","query":"","ip":"::1","user-agent":"PostmanRuntime/7.35.0","myError":"","cost":0}
+{"level":"info","ts":"2023-11-13T16:39:05.188+0800","caller":"Tietie/main.go:86","msg":"Shutdown Server ..."}
+{"level":"info","ts":"2023-11-13T16:39:05.188+0800","caller":"Tietie/main.go:95","msg":"Server exiting"}
+{"level":"info","ts":"2023-11-13T16:39:14.875+0800","caller":"logger/logger.go:89","msg":"/api/v1/community/1","status":200,"method":"GET","path":"/api/v1/community/1","query":"","ip":"::1","user-agent":"PostmanRuntime/7.35.0","myError":"","cost":0.0105641}
+{"level":"error","ts":"2023-11-13T16:39:18.744+0800","caller":"controller/community.go:40","msg":"id is invalid","error":"id is invalid"}
+{"level":"info","ts":"2023-11-13T16:39:18.744+0800","caller":"logger/logger.go:89","msg":"/api/v1/community/2","status":200,"method":"GET","path":"/api/v1/community/2","query":"","ip":"::1","user-agent":"PostmanRuntime/7.35.0","myError":"","cost":0.0020535}
+{"level":"info","ts":"2023-11-13T17:36:35.674+0800","caller":"Tietie/main.go:86","msg":"Shutdown Server ..."}
+{"level":"info","ts":"2023-11-13T17:36:35.674+0800","caller":"Tietie/main.go:95","msg":"Server exiting"}

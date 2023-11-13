@@ -7,4 +7,5 @@ var (
 	ErrorServerBusy   = errors.New("server is busy")
 	ErrorUserNotExist = errors.New("user do not exists")
 	ErrorPwdInvalid   = errors.New("password is invalid")
+	ErrorInvalidID    = errors.New("id is invalid")
 )

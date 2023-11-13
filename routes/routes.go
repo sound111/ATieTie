@@ -21,6 +21,15 @@ func Setup() (r *gin.Engine) {
 
 	r.POST("/login", controller.Login)
 
+	v1 := r.Group("/api/v1")
+	v1.Use(middlewares.JWTAuthMiddleware())
+	{
+		v1.GET("/community", controller.GetCommunityList)
+		v1.GET("/community/:id", controller.GetCommunityInfo)
+
+		v1.POST("/post", controller.CreatePost)
+	}
+
 	r.NoRoute(func(c *gin.Context) {
 		c.JSON(http.StatusOK, gin.H{
 			"msg": "404",
