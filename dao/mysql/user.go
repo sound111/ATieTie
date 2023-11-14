@@ -37,7 +37,6 @@ func Register(user *models.User) (err error) {
 
 func Login(user *models.User) (err error) {
 	opassword := user.Password
-
 	sql := "select user_id,username,password from user where username=?"
 	err = db.Get(user, sql, user.Username)
 	if err != nil {

@@ -15,6 +15,7 @@ const (
 	CodeTokenParseErr
 	CodeNoID
 	CodeRequestParamsErr
+	CodeNeedLogin
 )
 
 var codeMsgMap = map[ResCode]string{
@@ -27,8 +28,9 @@ var codeMsgMap = map[ResCode]string{
 	CodeNotLogin:         "login is necessary access for this page",
 	CodeTokenFormatErr:   "token have format err",
 	CodeTokenParseErr:    "token parse err",
-	CodeNoID:             "url has not id",
+	CodeNoID:             "url has not id", //路径参数
 	CodeRequestParamsErr: "request param has err",
+	CodeNeedLogin:        "login to access this page",
 }
 
 func (c ResCode) Msg() string {

@@ -1,6 +1,7 @@
 package main
 
 import (
+	"TieTie/dao/myRedis"
 	"TieTie/dao/mysql"
 	"TieTie/logger"
 	"TieTie/pkg/snowflakes"
@@ -50,13 +51,14 @@ func main() {
 	}
 	defer mysql.Close()
 
+	fmt.Println(settings.Conf.RedisConfig)
 	//连接redis go_redis
-	//err = redis.Init(settings.Conf.RedisConfig)
-	//if err != nil {
-	//	fmt.Println("initredis err:", err)
-	//	return
-	//}
-	//defer redis.Close()
+	err = myRedis.Init(settings.Conf.RedisConfig)
+	if err != nil {
+		fmt.Println("initredis err:", err)
+		return
+	}
+	defer myRedis.Close()
 
 	//路由 gin
 	gin.SetMode(settings.Conf.AppConfig.Mode)

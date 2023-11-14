@@ -28,6 +28,10 @@ func Setup() (r *gin.Engine) {
 		v1.GET("/community/:id", controller.GetCommunityInfo)
 
 		v1.POST("/post", controller.CreatePost)
+		v1.GET("/post/:id", controller.GetPostInfo)
+		v1.GET("/post/", controller.GetPostList)
+
+		v1.POST("/vote", controller.PostVote)
 	}
 
 	r.NoRoute(func(c *gin.Context) {
