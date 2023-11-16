@@ -8,6 +8,12 @@ import (
 	"encoding/hex"
 )
 
+func GetUserNameById(userId int64) (userName string, err error) {
+	sqlStr := "select username from user where user_id=?"
+	err = db.Get(&userName, sqlStr, userId)
+	return
+}
+
 func Register(user *models.User) (err error) {
 	sql := "select count(user_id) from user where username=?"
 

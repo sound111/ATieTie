@@ -1,19 +1,19 @@
 package controller
 
 import (
-	"errors"
+	"TieTie/myError"
 
 	"github.com/gin-gonic/gin"
 )
 
-const CtxUserId = "UserId"
+const (
+	CtxUserId = "UserId"
+)
 
-var ErrUserNotLogin = errors.New("user not login")
-
-func GetUserId(c *gin.Context) (uint64, error) {
+func getUserId(c *gin.Context) (uint64, error) {
 	id, ok := c.Get(CtxUserId)
 	if !ok {
-		return 0, ErrUserNotLogin
+		return 0, myError.ErrUserNotLogin
 	}
 
 	uid := id.(uint64)

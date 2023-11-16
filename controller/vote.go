@@ -25,7 +25,7 @@ func PostVote(c *gin.Context) {
 		return
 	}
 
-	userId, err := GetUserId(c)
+	userId, err := getUserId(c)
 	if err != nil {
 		ResponseError(c, CodeNeedLogin)
 		return

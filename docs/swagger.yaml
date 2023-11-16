@@ -1,0 +1,108 @@
+basePath: /
+definitions:
+  controller.ResCode:
+    enum:
+    - 1000
+    - 1001
+    - 1002
+    - 1003
+    - 1004
+    - 1005
+    - 1006
+    - 1007
+    - 1008
+    - 1009
+    - 1010
+    - 1011
+    type: integer
+    x-enum-varnames:
+    - CodeSuccess
+    - CodeInvalidParam
+    - CodeUserExist
+    - CodeUserNotExist
+    - CodeInvalidPassword
+    - CodeServerBusy
+    - CodeNotLogin
+    - CodeTokenFormatErr
+    - CodeTokenParseErr
+    - CodeNoID
+    - CodeRequestParamsErr
+    - CodeNeedLogin
+  controller.Response:
+    properties:
+      code:
+        $ref: '#/definitions/controller.ResCode'
+      data: {}
+      msg: {}
+    type: object
+host: localhost:8080
+info:
+  contact:
+    email: support@swagger.io
+    name: sound
+    url: http://www.swagger.io/support
+  description: a simple blog
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+  termsOfService: http://swagger.io/terms/
+  title: Tietie
+  version: "1.0"
+paths:
+  /login:
+    get:
+      consumes:
+      - application/json
+      description: 用户输入用户名和密码进行登录
+      parameters:
+      - in: query
+        name: password
+        required: true
+        type: string
+      - in: query
+        name: username
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/controller.Response'
+      security:
+      - ApiKeyAuth: []
+      summary: 用户登录接口
+      tags:
+      - 用户相关接口
+  /register:
+    post:
+      consumes:
+      - application/json
+      description: 输入用户名和密码进行注册
+      parameters:
+      - in: query
+        name: password
+        required: true
+        type: string
+      - in: query
+        name: re_password
+        required: true
+        type: string
+      - in: query
+        name: username
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/controller.Response'
+      security:
+      - ApiKeyAuth: []
+      summary: 用户注册接口
+      tags:
+      - 用户相关接口
+swagger: "2.0"

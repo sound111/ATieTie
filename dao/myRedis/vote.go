@@ -2,6 +2,7 @@ package myRedis
 
 import (
 	"errors"
+	"fmt"
 	"time"
 
 	"github.com/go-redis/redis"
@@ -15,6 +16,11 @@ func PostVote(userId, postId string, value float64) (err error) {
 	postTime := db.ZScore(getRedisKey(KeyPostTimeZSet), postId).Val()
 
 	if float64(time.Now().Unix())-postTime > oneWeekSeconds {
+		fmt.Println("--===")
+		fmt.Println(time.Now().Unix())
+		fmt.Println(float64(time.Now().Unix()))
+		fmt.Println(postTime)
+		fmt.Println(float64(time.Now().Unix()) - postTime)
 		err = ErrPostTimeExpire
 		return
 	}

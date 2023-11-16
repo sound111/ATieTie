@@ -21,7 +21,7 @@ func CreatePost(c *gin.Context) {
 	}
 
 	//取到当前用户id
-	p.AuthorId, err = GetUserId(c)
+	p.AuthorId, err = getUserId(c)
 
 	//业务处理
 	err = logic.CreatePost(p)
@@ -63,6 +63,34 @@ func GetPostInfo(c *gin.Context) {
 
 func GetPostList(c *gin.Context) {
 	posts, err := logic.GetPostList()
+	if err != nil {
+		zap.L().Error(err.Error(), zap.Error(err))
+		ResponseError(c, CodeServerBusy)
+		return
+	}
+
+	ResponseSuccess(c, posts)
+}
+
+// GetPostList2 实现分页展示
+// 按时间或者分数排序
+func GetPostList2(c *gin.Context) {
+
+	p := models.ParamPostList{
+		Page:  1,
+		Size:  10,
+		Order: models.OrderTime,
+	}
+
+	err := c.ShouldBindQuery(&p)
+	if err != nil {
+		zap.L().Error(err.Error(), zap.Error(err))
+		ResponseError(c, CodeRequestParamsErr)
+		return
+	}
+	fmt.Println(p)
+
+	posts, err := logic.GetPostList2(&p)
 	if err != nil {
 		zap.L().Error(err.Error(), zap.Error(err))
 		ResponseError(c, CodeServerBusy)

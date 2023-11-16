@@ -1,5 +1,10 @@
 package models
 
+const (
+	OrderTime  = "time"
+	OrderScore = "score"
+)
+
 type ParamRegister struct {
 	Username   string `json:"username" binding:"required"`
 	Password   string `json:"password" binding:"required"`
@@ -13,6 +18,7 @@ type ParamLogin struct {
 
 type ParamPostInfo struct {
 	AuthorName string `json:"author_name" db:"author_name"`
+	VoteNum    int64  `json:"vote_num" db:"vote_num"`
 	*Community `json:"community" db:"community"`
 	*Post      //加不加tag，有区别
 }
@@ -23,4 +29,10 @@ type ParamVoteData struct {
 	Direction int   `json:"direction" binding:"oneof=1 0 -1"` //0不投票 1赞成票 -1反对票
 	//required 当为默认值时，会认为你没填该字段，例如bool为false时，int为0时等
 	//validator
+}
+
+type ParamPostList struct {
+	Page  int64  `json:"page" form:"page"`
+	Size  int64  `json:"size" form:"size"`
+	Order string `json:"order" form:"order"`
 }

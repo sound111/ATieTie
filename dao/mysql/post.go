@@ -6,6 +6,10 @@ import (
 	"TieTie/pkg/snowflakes"
 	"database/sql"
 	"errors"
+	"fmt"
+	"strings"
+
+	"github.com/jmoiron/sqlx"
 
 	"go.uber.org/zap"
 )
@@ -24,7 +28,7 @@ func CreatePost(p *models.Post) (err error) {
 func GetPostInfo(id int64) (p *models.ParamPostInfo, err error) {
 	p = new(models.ParamPostInfo)
 	post := new(models.Post)
-	sqlStr := "select post_id,title,content,author_id,community_id,status from post where post_id=?"
+	sqlStr := "select post_id,title,content,author_id,community_id from post where post_id=?"
 
 	err = db.Get(post, sqlStr, id)
 	if err != nil {
@@ -59,7 +63,7 @@ func GetPostInfo(id int64) (p *models.ParamPostInfo, err error) {
 // # offset：可选项，偏移量，指定了结果集的起始位置(从0开始)，为0时可省略
 // # rows：行数，指定了返回结果集的行数
 func GetPostList() (p []*models.Post, err error) {
-	sqlStr := "select post_id,title from post"
+	sqlStr := "select  post_id, title, content, author_id, community_id, create_time from post"
 
 	err = db.Select(&p, sqlStr)
 	if err != nil {
@@ -71,5 +75,26 @@ func GetPostList() (p []*models.Post, err error) {
 		}
 	}
 
+	return
+}
+
+// GetPostInfoByList ??????
+func GetPostInfoByList(ids []string) (posts []*models.Post, err error) {
+	sqlStr := `select post_id,title,content,author_id,community_id,create_time
+			from post
+			where post_id in (?)
+			order by FIND_IN_SET(post_id,?)`
+
+	query, args, err := sqlx.In(sqlStr, ids, strings.Join(ids, ","))
+	if err != nil {
+		return
+	}
+
+	query = db.Rebind(query)
+
+	err = db.Select(&posts, query, args...)
+
+	fmt.Println("sql2")
+	fmt.Println("err:", err)
 	return
 }

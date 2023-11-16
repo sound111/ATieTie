@@ -26,7 +26,7 @@ create table `community` (
                         unique key `idx_community_name` (`community_name`) using btree
 )engine=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
-insert into `community` (id,community_id, community_name, introduction) VALUES ('1','1','go','hello go');
+insert into `community` (id,community_id, community_name, introduction) VALUES ('0','0','cpp','hello cpp');
 
 select community_id,community_name,introduction,create_time from community where community_id=1
 
@@ -44,3 +44,11 @@ create table `post` (
                         primary key (`id`),
                         unique key `idx_post_id` (`post_id`) using btree
 )engine=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+
+select post_id,title
+from post
+where id in (46164855144579073)
+order by FIND_IN_SET(post_id,46164855144579073)
+
+select post_id,title,content,author_id,community_id from post where post_id=46031311390900225;

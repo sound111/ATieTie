@@ -6,6 +6,7 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
+// Response
 type Response struct {
 	Code ResCode     `json:"code"`
 	Msg  interface{} `json:"msg"`

@@ -6,11 +6,23 @@ import (
 	"TieTie/middlewares"
 	"net/http"
 
+	swaggerFiles "github.com/swaggo/files"
+
+	_ "TieTie/docs"
+
+	ginSwagger "github.com/swaggo/gin-swagger"
+
 	"github.com/gin-gonic/gin"
 )
 
+// gin-swagger middleware
+// swagger embed files
+
 func Setup() (r *gin.Engine) {
 	r = gin.New()
+
+	r.GET("/swagger/*any", ginSwagger.WrapHandler(swaggerFiles.Handler))
+
 	r.Use(logger.GinLogger(), logger.GinRecovery(true))
 
 	r.GET("/", middlewares.JWTAuthMiddleware(), func(c *gin.Context) {
@@ -30,6 +42,7 @@ func Setup() (r *gin.Engine) {
 		v1.POST("/post", controller.CreatePost)
 		v1.GET("/post/:id", controller.GetPostInfo)
 		v1.GET("/post/", controller.GetPostList)
+		v1.GET("/post2/", controller.GetPostList2)
 
 		v1.POST("/vote", controller.PostVote)
 	}

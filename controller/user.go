@@ -10,6 +10,16 @@ import (
 	"go.uber.org/zap"
 )
 
+// Register 用户注册接口
+// @Summary 用户注册接口
+// @Description 输入用户名和密码进行注册
+// @Tags 用户相关接口
+// @Accept json
+// @Produce json
+// @Param object query models.ParamRegister false "查询参数"
+// @Security ApiKeyAuth
+// @Success 200 {object} Response
+// @Router /register [post]
 func Register(c *gin.Context) {
 	//获取参数以及参数校验
 	var p *models.ParamRegister
@@ -37,6 +47,16 @@ func Register(c *gin.Context) {
 	ResponseSuccess(c, "register success")
 }
 
+// Login 用户登录接口
+// @Summary 用户登录接口
+// @Description 用户输入用户名和密码进行登录
+// @Tags 用户相关接口
+// @Accept json
+// @Produce json
+// @Param object query models.ParamLogin false "查询参数"
+// @Security ApiKeyAuth
+// @Success 200 {object} Response
+// @Router /login [get]
 func Login(c *gin.Context) {
 	//获取参数以及参数校验
 	var p *models.ParamLogin
