@@ -86,7 +86,8 @@ func main() {
 
 	go func() {
 		// 开启一个goroutine启动服务
-		if err := srv.ListenAndServe(); err != nil && err != http.ErrServerClosed {
+		err := srv.ListenAndServe()
+		if err != nil && err != http.ErrServerClosed {
 			log.Fatalf("listen: %s\n", err)
 		}
 	}()
